@@ -71,6 +71,7 @@ const alfredItem = (emojiDetails, emojiSymbol) => {
     title: name,
     subtitle: `${verb} "${modifiedEmoji}" (${name}) ${preposition}`,
     arg: modifiedEmoji,
+    match: [name, ...emojiDetails.keywords].join(' '),
     autocomplete: name,
     icon: { path: `./icons/${icon}.png` },
     mods: {
